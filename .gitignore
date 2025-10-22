@@ -51,3 +51,7 @@ web/themes/contrib
 
 # Ignore multi-site test environment.
 # simpletest
+
+
+/kaggle-data/*
+!/kaggle-data/url.md
