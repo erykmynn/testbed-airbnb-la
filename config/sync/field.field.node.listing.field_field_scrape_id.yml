@@ -1,15 +1,15 @@
-uuid: 31fa3af5-a2fc-43be-8e18-7e8339ee3c87
+uuid: e50a3ca7-a11f-4d27-b990-b6018a3d5b7c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_scrape_id
+    - field.storage.node.field_field_scrape_id
     - node.type.listing
-id: node.listing.field_scrape_id
-field_name: field_scrape_id
+id: node.listing.field_field_scrape_id
+field_name: field_field_scrape_id
 entity_type: node
 bundle: listing
-label: 'Scrape ID'
+label: field_scrape_id
 description: ''
 required: false
 translatable: false
@@ -20,4 +20,4 @@ settings:
   max: null
   prefix: ''
   suffix: ''
-field_type: integer
+field_type: decimal

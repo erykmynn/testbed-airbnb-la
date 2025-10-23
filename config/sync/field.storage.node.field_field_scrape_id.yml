@@ -1,16 +1,16 @@
-uuid: 4b579176-9492-404b-bcf5-8b7fa55a134b
+uuid: 51a94c18-6183-42fc-89ea-4baef99514ef
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_scrape_id
-field_name: field_scrape_id
+id: node.field_field_scrape_id
+field_name: field_field_scrape_id
 entity_type: node
-type: integer
+type: decimal
 settings:
-  unsigned: false
-  size: normal
+  precision: 16
+  scale: 0
 module: core
 locked: false
 cardinality: 1

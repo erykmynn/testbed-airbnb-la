@@ -1,0 +1,8 @@
+uuid: 20bcbf53-b159-439b-95ef-0a01c9c411a5
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_csv_airbnb_test
+label: 'CSV file migration'
+description: null
+locked: false
