@@ -54,4 +54,5 @@ web/themes/contrib
 
 
 /kaggle-data/*
-!/kaggle-data/url.md
+!/kaggle-data/*.md
+!/kaggle-data/*.yml

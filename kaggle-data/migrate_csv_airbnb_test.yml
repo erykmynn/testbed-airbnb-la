@@ -1,0 +1,123 @@
+uuid: 8f14c09d-aa73-4b0f-9d12-79491cb2fad5
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_csv_airbnb_test
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - CSV
+migration_group: null
+label: 'CSV file migration'
+source:
+  plugin: csv
+  path: ../kaggle-data/test.csv
+  header_offset: 0
+  ids:
+    - id
+process:
+  type:
+    plugin: default_value
+    default_value: listing
+  field_listing_id: id
+  field_listing_url: listing_url
+  field_scrape_id: scrape_id
+  field_scrape_last: last_scraped
+  #field_scrape_last:
+    # - plugin: callback
+    #   callable: intval
+    #   source: last_scraped
+    # - plugin: callback
+    #   callable:
+    #     - '\PhpOffice\PhpSpreadsheet\Shared\Date'
+    #     - excelToTimestamp
+    # - plugin: format_date
+    #   from_format: 'U'
+    #   to_format: 'Y-m-d'
+  field_scrape_source: source
+  title: name
+  field_description: description
+  field_neighborhood_overview: neighborhood_overview
+  field_main_picture: picture_url
+  field_host_id: host_id
+  field_host_url: host_url
+  field_host_name: host_name
+  field_host_since: host_since
+  field_host_location: 
+    plugin: entity_generate
+    source: host_location
+    value_key: name
+    bundle: host_location
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_host_about: host_about
+  #field_host_response_time: host_response_time
+  field_host_response_rate: host_response_rate
+  field_host_acceptance_rate: host_acceptance_rate
+  field_host_is_superhost: host_is_superhost
+  field_host_thumbnail_url: host_thumbnail_url
+  field_host_picture_url: host_picture_url
+  field_host_neighborhood: host_neighbourhood
+  field_host_listings_count: host_listings_count
+  field_host_listings_total_listin: host_total_listings_count
+  field_host_verifications: host_verifications
+  field_host_has_profile_pic: host_has_profile_pic
+  field_host_identity_verified: host_identity_verified
+  field_neighborhood_highlights: neighbourhood
+  field_neighborhood: neighbourhood_cleansed
+  field_neighborhood_group: neighbourhood_group_cleansed
+  field_location_latitude: latitude
+  field_location_longitude: longitude
+  field_property_type: property_type
+  field_room_type: room_type
+  field_number_of_guests: accommodates
+  field_bathrooms: bathrooms
+  field_number_of_bathrooms_text: bathrooms_text
+  field_number_of_bedrooms: bedrooms
+  field_number_of_beds: beds
+  field_amenities: amenities
+  field_price: price
+  field_minimum_nights: minimum_nights
+  field_maximum_nights: maximum_nights
+  field_minimum_minimum_nights: minimum_minimum_nights
+  field_maximum_minimum_nights: maximum_minimum_nights
+  field_minimum_maximum_nights: minimum_maximum_nights
+  field_maximum_maximum_nights: maximum_maximum_nights
+  field_minimum_nights_avg_ntm: minimum_nights_avg_ntm
+  field_maximum_nights_avg_ntm: maximum_nights_avg_ntm
+  field_has_availability: has_availability
+  field_availability_30: availability_30
+  field_availability_60: availability_60
+  field_availability_90: availability_90
+  field_availability_365: availability_365
+  field_calendar_last_scraped: calendar_last_scraped
+  field_number_of_reviews: number_of_reviews
+  field_number_of_reviews_l12m: number_of_reviews_ltm
+  field_number_of_reviews_l30d: number_of_reviews_l30d
+  field_availability_to_end_of_yea: availability_eoy
+  field_number_of_reviews_last_yea: number_of_reviews_ly
+  field_estimated_occupancy_l365d: estimated_occupancy_l365d
+  field_estimated_revenue_l365d: estimated_revenue_l365d
+  field_first_review: first_review
+  field_last_review: last_review
+  field_review_scores_rating: review_scores_rating
+  field_review_scores_accuracy: review_scores_accuracy
+  field_review_scores_cleanliness: review_scores_cleanliness
+  field_review_scores_checkin: review_scores_checkin
+  field_review_scores_communicatio: review_scores_communication
+  field_review_scores_location: review_scores_location
+  field_review_scores_value: review_scores_value
+  field_license: license
+  field_instant_bookable: instant_bookable
+  field_calculated_host_count: calculated_host_listings_count
+  field_calculated_host_count_entip: calculated_host_listings_count_entire_homes
+  field_calculated_host_count_pr: calculated_host_listings_count_private_rooms
+  field_calculated_host_count_sh: calculated_host_listings_count_shared_rooms
+  field_reviews_per_month: reviews_per_month
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }
+  optional: {  }
+
