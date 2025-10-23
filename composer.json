@@ -25,6 +25,7 @@
         "drupal/gin_login": "^2.1",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_source_csv": "^3.7",
+        "drupal/migrate_tools": "^6.1",
         "drupal/navigation_extra_tools": "^1.0",
         "drush/drush": "^13.6"
     },
