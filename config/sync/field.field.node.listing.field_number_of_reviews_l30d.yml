@@ -1,0 +1,23 @@
+uuid: f78cee12-8d19-44ba-91f5-3d3744bcf3f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_reviews_l30d
+    - node.type.listing
+id: node.listing.field_number_of_reviews_l30d
+field_name: field_number_of_reviews_l30d
+entity_type: node
+bundle: listing
+label: 'Number Of Reviews L30d'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

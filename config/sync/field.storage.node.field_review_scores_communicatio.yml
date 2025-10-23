@@ -1,0 +1,20 @@
+uuid: b781c5fb-632f-4f1a-baac-376098dbb1c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_review_scores_communicatio
+field_name: field_review_scores_communicatio
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

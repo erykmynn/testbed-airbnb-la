@@ -1,0 +1,23 @@
+uuid: c769c8df-d289-4bb3-ab9d-3b5b990c208d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_scores_cleanliness
+    - node.type.listing
+id: node.listing.field_review_scores_cleanliness
+field_name: field_review_scores_cleanliness
+entity_type: node
+bundle: listing
+label: 'Review Scores Cleanliness'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

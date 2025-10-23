@@ -1,0 +1,23 @@
+uuid: da0c9e10-aad7-487a-ac1a-b381a3e7b6a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_beds
+    - node.type.listing
+id: node.listing.field_number_of_beds
+field_name: field_number_of_beds
+entity_type: node
+bundle: listing
+label: 'Number of Beds'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

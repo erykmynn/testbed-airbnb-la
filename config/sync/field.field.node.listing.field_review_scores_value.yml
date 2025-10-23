@@ -1,0 +1,23 @@
+uuid: 99c5f710-29d2-499f-9233-c72b83423b8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_scores_value
+    - node.type.listing
+id: node.listing.field_review_scores_value
+field_name: field_review_scores_value
+entity_type: node
+bundle: listing
+label: 'Review Scores Value'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

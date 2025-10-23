@@ -1,0 +1,21 @@
+uuid: efbc9703-a3ad-462a-83f3-3b6537952ee3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_since
+    - node.type.listing
+  module:
+    - datetime
+id: node.listing.field_host_since
+field_name: field_host_since
+entity_type: node
+bundle: listing
+label: 'Host Since'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

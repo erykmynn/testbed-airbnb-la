@@ -1,0 +1,20 @@
+uuid: b7035cc5-37a0-418b-9f61-40470cf076c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_host_listings_total_listin
+field_name: field_host_listings_total_listin
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 70aad40c-316e-4aa5-9f0d-2383993087ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_maximum_nights_avg_ntm
+    - node.type.listing
+id: node.listing.field_maximum_nights_avg_ntm
+field_name: field_maximum_nights_avg_ntm
+entity_type: node
+bundle: listing
+label: 'Maximum Nights Avg Ntm'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

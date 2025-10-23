@@ -1,0 +1,23 @@
+uuid: 9ce3fb12-0369-4528-86a6-4defa7deccdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_scores_location
+    - node.type.listing
+id: node.listing.field_review_scores_location
+field_name: field_review_scores_location
+entity_type: node
+bundle: listing
+label: 'Review Scores Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

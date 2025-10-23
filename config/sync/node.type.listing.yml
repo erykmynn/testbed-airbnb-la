@@ -1,0 +1,17 @@
+uuid: f16ead13-4e9e-4a9d-acf6-9db6a1382402
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Listing
+type: listing
+description: 'AirBnB-style property listing.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

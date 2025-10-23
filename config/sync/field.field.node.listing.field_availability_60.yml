@@ -1,0 +1,23 @@
+uuid: 660c7db2-cd2c-4f22-a714-d4b25b5c0a49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_availability_60
+    - node.type.listing
+id: node.listing.field_availability_60
+field_name: field_availability_60
+entity_type: node
+bundle: listing
+label: 'Availability 60'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

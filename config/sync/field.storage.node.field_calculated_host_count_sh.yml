@@ -1,0 +1,20 @@
+uuid: 34e6e7e1-5969-4914-8c33-4d667df3c9e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_calculated_host_count_sh
+field_name: field_calculated_host_count_sh
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 0e13797b-4745-4b05-9d51-766c8c1b9b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_bathrooms_text
+    - node.type.listing
+id: node.listing.field_number_of_bathrooms_text
+field_name: field_number_of_bathrooms_text
+entity_type: node
+bundle: listing
+label: 'Number of Bathrooms Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

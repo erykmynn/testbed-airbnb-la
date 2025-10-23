@@ -1,0 +1,23 @@
+uuid: adb6bff0-0da9-4050-b544-de57f79a48ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_calculated_host_count
+    - node.type.listing
+id: node.listing.field_calculated_host_count
+field_name: field_calculated_host_count
+entity_type: node
+bundle: listing
+label: 'Calculated Host Listings Count'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

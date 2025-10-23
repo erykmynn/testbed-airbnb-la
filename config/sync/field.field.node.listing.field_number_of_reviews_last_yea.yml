@@ -1,0 +1,23 @@
+uuid: 45e8862e-9006-410e-b711-960f3ec73239
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_reviews_last_yea
+    - node.type.listing
+id: node.listing.field_number_of_reviews_last_yea
+field_name: field_number_of_reviews_last_yea
+entity_type: node
+bundle: listing
+label: 'Number of Reviews Last Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

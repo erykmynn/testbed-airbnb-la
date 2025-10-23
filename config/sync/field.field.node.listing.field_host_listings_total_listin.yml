@@ -1,0 +1,23 @@
+uuid: bfcffe28-2ac0-4993-a30f-c5111beb73fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_listings_total_listin
+    - node.type.listing
+id: node.listing.field_host_listings_total_listin
+field_name: field_host_listings_total_listin
+entity_type: node
+bundle: listing
+label: 'Host Listings Total Listings Count'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

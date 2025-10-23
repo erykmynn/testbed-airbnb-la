@@ -1,0 +1,21 @@
+uuid: 76832349-1c62-4796-a34e-00fc38d50123
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_has_availability
+    - node.type.listing
+id: node.listing.field_has_availability
+field_name: field_has_availability
+entity_type: node
+bundle: listing
+label: 'Has Availability'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

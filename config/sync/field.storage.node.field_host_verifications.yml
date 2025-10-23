@@ -1,0 +1,30 @@
+uuid: 1ad8fd82-895a-4be7-9237-a3440a4b8f58
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_host_verifications
+field_name: field_host_verifications
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: email
+      label: email
+    -
+      value: work_email
+      label: work_email
+    -
+      value: phone
+      label: phone
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

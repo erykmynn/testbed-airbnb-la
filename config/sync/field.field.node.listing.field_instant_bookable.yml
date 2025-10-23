@@ -1,0 +1,21 @@
+uuid: 393f404d-07c0-41a2-aeea-835a6ff63bf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instant_bookable
+    - node.type.listing
+id: node.listing.field_instant_bookable
+field_name: field_instant_bookable
+entity_type: node
+bundle: listing
+label: 'Instant Bookable'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

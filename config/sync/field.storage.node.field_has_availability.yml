@@ -1,0 +1,18 @@
+uuid: bf212229-8f6a-44f2-9296-755d0307374a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_has_availability
+field_name: field_has_availability
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+uuid: 8f19eaa4-b2f8-485c-a033-64ab704afb10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_neighborhood_overview
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.listing
+  module:
+    - text
+id: node.listing.field_neighborhood_overview
+field_name: field_neighborhood_overview
+entity_type: node
+bundle: listing
+label: 'Neighborhood Overview'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 091377d8-f92c-47f6-aa95-baeaf1defeaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_reviews_l12m
+    - node.type.listing
+id: node.listing.field_number_of_reviews_l12m
+field_name: field_number_of_reviews_l12m
+entity_type: node
+bundle: listing
+label: 'Number of Reviews Last Twelve Months'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

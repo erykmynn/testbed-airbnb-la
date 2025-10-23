@@ -1,0 +1,9 @@
+uuid: f283f25c-c7e3-4860-8700-37115a72efda
+langcode: en
+status: true
+dependencies: {  }
+name: 'Host Location'
+vid: host_location
+description: null
+weight: 0
+new_revision: false

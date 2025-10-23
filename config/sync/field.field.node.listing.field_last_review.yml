@@ -1,0 +1,21 @@
+uuid: 41729820-07e9-48d2-a49b-2893f68cf793
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_review
+    - node.type.listing
+  module:
+    - datetime
+id: node.listing.field_last_review
+field_name: field_last_review
+entity_type: node
+bundle: listing
+label: 'Last Review'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

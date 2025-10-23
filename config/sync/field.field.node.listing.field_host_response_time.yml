@@ -1,0 +1,21 @@
+uuid: 11b29163-2b36-4fd4-908f-1330a9489739
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_response_time
+    - node.type.listing
+  module:
+    - options
+id: node.listing.field_host_response_time
+field_name: field_host_response_time
+entity_type: node
+bundle: listing
+label: 'Host Response Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

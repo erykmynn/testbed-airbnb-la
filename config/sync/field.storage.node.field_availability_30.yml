@@ -1,0 +1,20 @@
+uuid: 7a4c5d1d-7126-4fcf-9347-a10eefe5a85a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_availability_30
+field_name: field_availability_30
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

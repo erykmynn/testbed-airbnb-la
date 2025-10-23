@@ -1,0 +1,23 @@
+uuid: cc82599f-7a5c-4b34-bef0-4e200964abc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_minimum_nights_avg_ntm
+    - node.type.listing
+id: node.listing.field_minimum_nights_avg_ntm
+field_name: field_minimum_nights_avg_ntm
+entity_type: node
+bundle: listing
+label: 'Minimum Nights Avg Ntm'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

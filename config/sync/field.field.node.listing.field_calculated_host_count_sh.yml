@@ -1,0 +1,23 @@
+uuid: be39b35b-0083-44fc-8d44-74c751f49b38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_calculated_host_count_sh
+    - node.type.listing
+id: node.listing.field_calculated_host_count_sh
+field_name: field_calculated_host_count_sh
+entity_type: node
+bundle: listing
+label: 'Calculated Host Listings Count Shared Rooms'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

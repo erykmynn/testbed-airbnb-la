@@ -1,0 +1,30 @@
+uuid: e03ed82d-aa45-4a0f-9f60-9ba6b7c65096
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_neighborhood_group
+field_name: field_neighborhood_group
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: city_of_los_angeles
+      label: 'City of Los Angeles'
+    -
+      value: other_cities
+      label: 'Other Cities'
+    -
+      value: unincorporated_areas
+      label: 'Unincorporated Areas'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

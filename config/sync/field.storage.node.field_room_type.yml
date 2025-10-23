@@ -1,0 +1,33 @@
+uuid: ab4e557b-6eb9-4b5f-959a-a3986393862e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_room_type
+field_name: field_room_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: private_room
+      label: 'Private room'
+    -
+      value: entire_home_apt
+      label: 'Entire home/apt'
+    -
+      value: shared_room
+      label: 'Shared room'
+    -
+      value: hotel_room
+      label: 'Hotel room'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

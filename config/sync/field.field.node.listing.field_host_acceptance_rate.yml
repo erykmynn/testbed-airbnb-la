@@ -1,0 +1,23 @@
+uuid: 7b5e07fd-9eb3-4f29-90d8-747178ea26d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_acceptance_rate
+    - node.type.listing
+id: node.listing.field_host_acceptance_rate
+field_name: field_host_acceptance_rate
+entity_type: node
+bundle: listing
+label: 'Host Acceptance Rate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

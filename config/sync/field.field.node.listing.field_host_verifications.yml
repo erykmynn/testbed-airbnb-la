@@ -1,0 +1,21 @@
+uuid: 89885d06-5906-4a64-ac48-bd90781ad093
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_verifications
+    - node.type.listing
+  module:
+    - options
+id: node.listing.field_host_verifications
+field_name: field_host_verifications
+entity_type: node
+bundle: listing
+label: 'Host Verifications'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

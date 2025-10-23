@@ -1,0 +1,21 @@
+uuid: 283c2366-301e-4410-a5b3-ff92e87ed69c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_is_superhost
+    - node.type.listing
+id: node.listing.field_host_is_superhost
+field_name: field_host_is_superhost
+entity_type: node
+bundle: listing
+label: 'Host is Superhost'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

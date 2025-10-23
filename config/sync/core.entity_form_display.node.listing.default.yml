@@ -1,0 +1,703 @@
+uuid: f5dfe809-331d-42d1-9195-17630a2624de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.listing.field_amenities
+    - field.field.node.listing.field_availability_30
+    - field.field.node.listing.field_availability_365
+    - field.field.node.listing.field_availability_60
+    - field.field.node.listing.field_availability_90
+    - field.field.node.listing.field_availability_to_end_of_yea
+    - field.field.node.listing.field_bathrooms
+    - field.field.node.listing.field_calculated_host_count
+    - field.field.node.listing.field_calculated_host_count_enti
+    - field.field.node.listing.field_calculated_host_count_pr
+    - field.field.node.listing.field_calculated_host_count_sh
+    - field.field.node.listing.field_calendar_last_scraped
+    - field.field.node.listing.field_description
+    - field.field.node.listing.field_estimated_occupancy_l365d
+    - field.field.node.listing.field_estimated_revenue_l365d
+    - field.field.node.listing.field_first_review
+    - field.field.node.listing.field_has_availability
+    - field.field.node.listing.field_host_about
+    - field.field.node.listing.field_host_acceptance_rate
+    - field.field.node.listing.field_host_has_profile_pic
+    - field.field.node.listing.field_host_id
+    - field.field.node.listing.field_host_identity_verified
+    - field.field.node.listing.field_host_is_superhost
+    - field.field.node.listing.field_host_listings_count
+    - field.field.node.listing.field_host_listings_total_listin
+    - field.field.node.listing.field_host_location
+    - field.field.node.listing.field_host_name
+    - field.field.node.listing.field_host_neighborhood
+    - field.field.node.listing.field_host_picture_url
+    - field.field.node.listing.field_host_response_rate
+    - field.field.node.listing.field_host_response_time
+    - field.field.node.listing.field_host_since
+    - field.field.node.listing.field_host_thumbnail_url
+    - field.field.node.listing.field_host_url
+    - field.field.node.listing.field_host_verifications
+    - field.field.node.listing.field_instant_bookable
+    - field.field.node.listing.field_last_review
+    - field.field.node.listing.field_license
+    - field.field.node.listing.field_listing_id
+    - field.field.node.listing.field_listing_url
+    - field.field.node.listing.field_location_latitude
+    - field.field.node.listing.field_location_longitude
+    - field.field.node.listing.field_main_picture
+    - field.field.node.listing.field_maximum_maximum_nights
+    - field.field.node.listing.field_maximum_minimum_nights
+    - field.field.node.listing.field_maximum_nights
+    - field.field.node.listing.field_maximum_nights_avg_ntm
+    - field.field.node.listing.field_minimum_maximum_nights
+    - field.field.node.listing.field_minimum_minimum_nights
+    - field.field.node.listing.field_minimum_nights
+    - field.field.node.listing.field_minimum_nights_avg_ntm
+    - field.field.node.listing.field_neighborhood
+    - field.field.node.listing.field_neighborhood_group
+    - field.field.node.listing.field_neighborhood_highlights
+    - field.field.node.listing.field_neighborhood_overview
+    - field.field.node.listing.field_number_of_bathrooms_text
+    - field.field.node.listing.field_number_of_bedrooms
+    - field.field.node.listing.field_number_of_beds
+    - field.field.node.listing.field_number_of_guests
+    - field.field.node.listing.field_number_of_reviews
+    - field.field.node.listing.field_number_of_reviews_l12m
+    - field.field.node.listing.field_number_of_reviews_l30d
+    - field.field.node.listing.field_number_of_reviews_last_yea
+    - field.field.node.listing.field_price
+    - field.field.node.listing.field_property_type
+    - field.field.node.listing.field_review_scores_accuracy
+    - field.field.node.listing.field_review_scores_checkin
+    - field.field.node.listing.field_review_scores_cleanliness
+    - field.field.node.listing.field_review_scores_communicatio
+    - field.field.node.listing.field_review_scores_location
+    - field.field.node.listing.field_review_scores_rating
+    - field.field.node.listing.field_review_scores_value
+    - field.field.node.listing.field_reviews_per_month
+    - field.field.node.listing.field_room_type
+    - field.field.node.listing.field_scrape_id
+    - field.field.node.listing.field_scrape_last
+    - field.field.node.listing.field_scrape_source
+    - node.type.listing
+  module:
+    - datetime
+    - link
+    - path
+    - text
+id: node.listing.default
+targetEntityType: node
+bundle: listing
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_amenities:
+    type: entity_reference_autocomplete
+    weight: 160
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_availability_30:
+    type: number
+    weight: 171
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_availability_365:
+    type: number
+    weight: 174
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_availability_60:
+    type: number
+    weight: 172
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_availability_90:
+    type: number
+    weight: 173
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_availability_to_end_of_yea:
+    type: number
+    weight: 180
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_bathrooms:
+    type: number
+    weight: 156
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_calculated_host_count:
+    type: number
+    weight: 195
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_calculated_host_count_enti:
+    type: number
+    weight: 196
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_calculated_host_count_pr:
+    type: number
+    weight: 197
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_calculated_host_count_sh:
+    type: number
+    weight: 198
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_calendar_last_scraped:
+    type: datetime_default
+    weight: 175
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_estimated_occupancy_l365d:
+    type: number
+    weight: 182
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_estimated_revenue_l365d:
+    type: number
+    weight: 183
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_first_review:
+    type: datetime_default
+    weight: 184
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_has_availability:
+    type: boolean_checkbox
+    weight: 170
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_host_about:
+    type: string_textarea
+    weight: 131
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_acceptance_rate:
+    type: number
+    weight: 137
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_has_profile_pic:
+    type: boolean_checkbox
+    weight: 146
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_host_id:
+    type: entity_reference_autocomplete
+    weight: 144
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_identity_verified:
+    type: boolean_checkbox
+    weight: 147
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_host_is_superhost:
+    type: boolean_checkbox
+    weight: 138
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_host_listings_count:
+    type: number
+    weight: 142
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_listings_total_listin:
+    type: number
+    weight: 143
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_location:
+    type: entity_reference_autocomplete
+    weight: 130
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_name:
+    type: string_textfield
+    weight: 128
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_neighborhood:
+    type: entity_reference_autocomplete
+    weight: 141
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_picture_url:
+    type: link_default
+    weight: 140
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_host_response_rate:
+    type: number
+    weight: 136
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_host_response_time:
+    type: options_select
+    weight: 132
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_host_since:
+    type: datetime_default
+    weight: 129
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_host_thumbnail_url:
+    type: link_default
+    weight: 139
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_host_url:
+    type: link_default
+    weight: 127
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_host_verifications:
+    type: options_select
+    weight: 145
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_instant_bookable:
+    type: boolean_checkbox
+    weight: 194
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_last_review:
+    type: datetime_default
+    weight: 185
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_license:
+    type: string_textfield
+    weight: 193
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_listing_id:
+    type: number
+    weight: 121
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_listing_url:
+    type: link_default
+    weight: 122
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_location_latitude:
+    type: number
+    weight: 151
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_location_longitude:
+    type: number
+    weight: 152
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_main_picture:
+    type: link_default
+    weight: 125
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_maximum_maximum_nights:
+    type: number
+    weight: 167
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_maximum_minimum_nights:
+    type: number
+    weight: 165
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_maximum_nights:
+    type: number
+    weight: 163
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_maximum_nights_avg_ntm:
+    type: number
+    weight: 169
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_minimum_maximum_nights:
+    type: number
+    weight: 166
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_minimum_minimum_nights:
+    type: number
+    weight: 164
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_minimum_nights:
+    type: number
+    weight: 162
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_minimum_nights_avg_ntm:
+    type: number
+    weight: 168
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_neighborhood:
+    type: entity_reference_autocomplete
+    weight: 149
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_neighborhood_group:
+    type: options_select
+    weight: 150
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_neighborhood_highlights:
+    type: boolean_checkbox
+    weight: 148
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_neighborhood_overview:
+    type: text_textarea
+    weight: 124
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_bathrooms_text:
+    type: string_textfield
+    weight: 157
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_bedrooms:
+    type: number
+    weight: 158
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_beds:
+    type: number
+    weight: 159
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_guests:
+    type: number
+    weight: 155
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_reviews:
+    type: number
+    weight: 176
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_reviews_l12m:
+    type: number
+    weight: 179
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_reviews_l30d:
+    type: number
+    weight: 178
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_number_of_reviews_last_yea:
+    type: number
+    weight: 181
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_price:
+    type: number
+    weight: 161
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_property_type:
+    type: entity_reference_autocomplete
+    weight: 153
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_review_scores_accuracy:
+    type: number
+    weight: 187
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_review_scores_checkin:
+    type: number
+    weight: 189
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_review_scores_cleanliness:
+    type: number
+    weight: 188
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_review_scores_communicatio:
+    type: number
+    weight: 190
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_review_scores_location:
+    type: number
+    weight: 191
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_review_scores_rating:
+    type: number
+    weight: 186
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_review_scores_value:
+    type: number
+    weight: 192
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_reviews_per_month:
+    type: number
+    weight: 199
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_room_type:
+    type: options_select
+    weight: 154
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_scrape_id:
+    type: number
+    weight: 133
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_scrape_last:
+    type: datetime_default
+    weight: 134
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_scrape_source:
+    type: options_select
+    weight: 135
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

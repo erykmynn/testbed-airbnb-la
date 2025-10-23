@@ -1,0 +1,23 @@
+uuid: c3427ac8-493f-44e6-ad46-87f94f798224
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_availability_365
+    - node.type.listing
+id: node.listing.field_availability_365
+field_name: field_availability_365
+entity_type: node
+bundle: listing
+label: 'Availability 365'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

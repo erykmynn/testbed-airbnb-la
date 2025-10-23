@@ -1,0 +1,23 @@
+uuid: 182f3643-a896-4a6d-b88d-6c639859f4ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_url
+    - node.type.listing
+  module:
+    - link
+id: node.listing.field_listing_url
+field_name: field_listing_url
+entity_type: node
+bundle: listing
+label: 'Listing URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

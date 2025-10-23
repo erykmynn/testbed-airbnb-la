@@ -1,0 +1,23 @@
+uuid: 6045c7ce-8e25-4dfd-a14d-c02388f2b79e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_calculated_host_count_pr
+    - node.type.listing
+id: node.listing.field_calculated_host_count_pr
+field_name: field_calculated_host_count_pr
+entity_type: node
+bundle: listing
+label: 'Calculated Host Listings Count Private Rooms'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

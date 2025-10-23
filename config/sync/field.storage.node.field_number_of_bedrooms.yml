@@ -1,0 +1,20 @@
+uuid: 74e35f23-c90a-455f-85c6-1615b5a37160
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_number_of_bedrooms
+field_name: field_number_of_bedrooms
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

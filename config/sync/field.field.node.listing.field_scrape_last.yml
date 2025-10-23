@@ -1,0 +1,21 @@
+uuid: a7a37307-68a2-4796-91f6-4870c81c11fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scrape_last
+    - node.type.listing
+  module:
+    - datetime
+id: node.listing.field_scrape_last
+field_name: field_scrape_last
+entity_type: node
+bundle: listing
+label: 'Scrape Last'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

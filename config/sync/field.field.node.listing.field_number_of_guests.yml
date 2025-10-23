@@ -1,0 +1,23 @@
+uuid: f09fcd0c-1461-4bc0-a0ca-6a8efa843ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_guests
+    - node.type.listing
+id: node.listing.field_number_of_guests
+field_name: field_number_of_guests
+entity_type: node
+bundle: listing
+label: 'Number of Guests'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

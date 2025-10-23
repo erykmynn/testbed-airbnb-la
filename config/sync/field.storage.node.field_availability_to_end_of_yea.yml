@@ -1,0 +1,20 @@
+uuid: 8b000c67-ba2f-4932-bd33-049964fd98cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_availability_to_end_of_yea
+field_name: field_availability_to_end_of_yea
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

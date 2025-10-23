@@ -1,0 +1,23 @@
+uuid: 8208745a-c5c7-45f9-91d3-661deaaf5ed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_id
+    - node.type.listing
+id: node.listing.field_listing_id
+field_name: field_listing_id
+entity_type: node
+bundle: listing
+label: 'Listing ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,20 @@
+uuid: 4ca9384c-1fcd-49ed-9df8-62cae7225939
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_listing_id
+field_name: field_listing_id
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

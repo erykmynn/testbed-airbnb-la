@@ -1,0 +1,23 @@
+uuid: 6b71c5da-7c04-4195-b8fe-e9feb1834728
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_availability_to_end_of_yea
+    - node.type.listing
+id: node.listing.field_availability_to_end_of_yea
+field_name: field_availability_to_end_of_yea
+entity_type: node
+bundle: listing
+label: 'Availability to End of Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,23 @@
+uuid: 6daa02bc-4110-4163-9554-b004c2c3908b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_longitude
+    - node.type.listing
+id: node.listing.field_location_longitude
+field_name: field_location_longitude
+entity_type: node
+bundle: listing
+label: 'Location Longitude'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,21 @@
+uuid: e3fea877-e867-4029-aaf7-d3378b825cb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_identity_verified
+    - node.type.listing
+id: node.listing.field_host_identity_verified
+field_name: field_host_identity_verified
+entity_type: node
+bundle: listing
+label: 'Host Identity Verified'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

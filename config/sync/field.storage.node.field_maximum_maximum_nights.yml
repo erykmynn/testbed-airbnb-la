@@ -1,0 +1,20 @@
+uuid: 15a62fc2-165f-4716-a174-cc55e174c361
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_maximum_maximum_nights
+field_name: field_maximum_maximum_nights
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

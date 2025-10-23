@@ -1,0 +1,21 @@
+uuid: cc996358-9285-4e54-b476-34053bc83be2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_calendar_last_scraped
+    - node.type.listing
+  module:
+    - datetime
+id: node.listing.field_calendar_last_scraped
+field_name: field_calendar_last_scraped
+entity_type: node
+bundle: listing
+label: 'Calendar Last Scraped'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

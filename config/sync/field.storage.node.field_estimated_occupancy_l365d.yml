@@ -1,0 +1,20 @@
+uuid: 4624577d-5cce-4535-ac30-3602f7d176c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_estimated_occupancy_l365d
+field_name: field_estimated_occupancy_l365d
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

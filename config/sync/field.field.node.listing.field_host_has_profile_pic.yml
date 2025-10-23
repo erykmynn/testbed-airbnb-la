@@ -1,0 +1,21 @@
+uuid: 76868a84-d746-4360-b250-d0ce58e4a3e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_has_profile_pic
+    - node.type.listing
+id: node.listing.field_host_has_profile_pic
+field_name: field_host_has_profile_pic
+entity_type: node
+bundle: listing
+label: 'Host has Profile Pic'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

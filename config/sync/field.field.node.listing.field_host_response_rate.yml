@@ -1,0 +1,23 @@
+uuid: 5c39988c-76fc-4906-a007-0af433e419d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_response_rate
+    - node.type.listing
+id: node.listing.field_host_response_rate
+field_name: field_host_response_rate
+entity_type: node
+bundle: listing
+label: 'Host Response Rate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

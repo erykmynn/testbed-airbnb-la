@@ -1,0 +1,21 @@
+uuid: c25091bc-629d-4d35-8900-4898f210cc2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_neighborhood_highlights
+    - node.type.listing
+id: node.listing.field_neighborhood_highlights
+field_name: field_neighborhood_highlights
+entity_type: node
+bundle: listing
+label: 'Neighborhood Highlights'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

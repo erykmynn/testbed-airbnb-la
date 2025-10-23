@@ -1,0 +1,23 @@
+uuid: 2e1d979c-f759-4def-8c94-fef7b00f2d0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_minimum_minimum_nights
+    - node.type.listing
+id: node.listing.field_minimum_minimum_nights
+field_name: field_minimum_minimum_nights
+entity_type: node
+bundle: listing
+label: 'Minimum Minimum Nights'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

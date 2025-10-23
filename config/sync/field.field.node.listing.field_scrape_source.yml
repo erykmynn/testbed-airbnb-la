@@ -1,0 +1,21 @@
+uuid: 0055e5c4-39f1-4934-ac5f-9e62d021c316
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scrape_source
+    - node.type.listing
+  module:
+    - options
+id: node.listing.field_scrape_source
+field_name: field_scrape_source
+entity_type: node
+bundle: listing
+label: 'Scrape Source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: 7a21f58a-8828-4372-8f1a-3fa7cd89582b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_calculated_host_count_enti
+    - node.type.listing
+id: node.listing.field_calculated_host_count_enti
+field_name: field_calculated_host_count_enti
+entity_type: node
+bundle: listing
+label: 'Calculated Host Listings Count Entire Homes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

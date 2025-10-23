@@ -1,0 +1,19 @@
+uuid: 8abfbc6e-f436-45dc-b2f3-6521f2d144ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_host_about
+    - node.type.listing
+id: node.listing.field_host_about
+field_name: field_host_about
+entity_type: node
+bundle: listing
+label: 'Host About'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

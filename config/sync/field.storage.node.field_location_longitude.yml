@@ -1,0 +1,20 @@
+uuid: 952ddf18-b556-4cc8-ad4a-b3ebb47d1850
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_location_longitude
+field_name: field_location_longitude
+entity_type: node
+type: decimal
+settings:
+  precision: 16
+  scale: 10
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
