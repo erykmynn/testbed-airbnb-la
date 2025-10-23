@@ -23,6 +23,7 @@
         "drupal/core-recommended": "^11.2",
         "drupal/gin": "^5",
         "drupal/gin_login": "^2.1",
+        "drupal/migrate_source_csv": "^3.7",
         "drupal/navigation_extra_tools": "^1.0",
         "drush/drush": "^13.6"
     },
