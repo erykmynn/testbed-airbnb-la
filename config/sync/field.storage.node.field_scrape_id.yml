@@ -1,11 +1,11 @@
-uuid: 51a94c18-6183-42fc-89ea-4baef99514ef
+uuid: db49fea9-cd17-4621-8f0f-86eb37b695fd
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_field_scrape_id
-field_name: field_field_scrape_id
+id: node.field_scrape_id
+field_name: field_scrape_id
 entity_type: node
 type: decimal
 settings:
