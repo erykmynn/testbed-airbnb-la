@@ -1,0 +1,10 @@
+uuid: d0c7a345-0894-4ca9-8c80-4d789c92d64b
+langcode: en
+status: true
+dependencies: {  }
+id: testbed_airbnb_la
+label: 'Testbed Airbnb LA'
+description: 'AirBNB listings from Los Angeles data testbest from Kaggle (see kaggle-data directory).'
+source_type: CSV
+module: null
+shared_configuration: null

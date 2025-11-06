@@ -1,18 +1,17 @@
-uuid: 8f14c09d-aa73-4b0f-9d12-79491cb2fad5
+uuid: ff36fb47-47e1-45f5-9b66-321719edd908
 langcode: en
 status: true
 dependencies: {  }
-id: migrate_csv_airbnb_test
+id: testbed_airbnb_la_listings
 class: null
 field_plugin_method: null
 cck_plugin_method: null
-migration_tags:
-  - CSV
-migration_group: null
+migration_tags: null
+migration_group: testbed_airbnb_la
 label: 'CSV file migration'
 source:
   plugin: csv
-  path: ../kaggle-data/test.csv
+  path: ../kaggle-data/listings.csv
   header_offset: 0
   ids:
     - id
@@ -22,7 +21,7 @@ process:
     default_value: listing
   field_listing_id: id
   field_listing_url: listing_url
-  field_scrape_id: 
+  field_scrape_id:
     plugin: callback
     callable: floatval
     source: scrape_id
@@ -30,13 +29,15 @@ process:
   field_scrape_source:
     plugin: str_replace
     source: source
-    search: [" ","/"]
-    replace: '_'
+    search:
+      - ' '
+      - /
+    replace: _
   title: name
   field_description: description
   field_neighborhood_overview: neighborhood_overview
   field_main_picture: picture_url
-  field_host_id: 
+  field_host_id:
     plugin: entity_generate
     value_key: name
     bundle: host_id
@@ -46,7 +47,7 @@ process:
   field_host_url: host_url
   field_host_name: host_name
   field_host_since: host_since
-  field_host_location: 
+  field_host_location:
     plugin: entity_generate
     source: host_location
     value_key: name
@@ -55,132 +56,149 @@ process:
     ignore_case: true
   field_host_about: host_about
   field_host_response_time:
-    - plugin: str_replace
-      search: [" ", "/"]
-      replace: '_'
+    -
+      plugin: str_replace
+      search:
+        - ' '
+        - /
+      replace: _
       source: host_response_time
-    - plugin: callback
+    -
+      plugin: callback
       callable: strtolower
   field_host_response_rate:
     plugin: callback
     callable: floatval
     source: host_response_rate
-  field_host_acceptance_rate: 
+  field_host_acceptance_rate:
     plugin: callback
     callable: floatval
     source: host_acceptance_rate
-  field_host_is_superhost: 
+  field_host_is_superhost:
     plugin: static_map
     map:
-      f: FALSE
-      t: TRUE
-    default_value: FALSE
+      f: false
+      t: true
+    default_value: false
     source: host_is_superhost
   field_host_thumbnail_url: host_thumbnail_url
   field_host_picture_url: host_picture_url
-  field_host_neighborhood: 
+  field_host_neighborhood:
     plugin: entity_generate
     value_key: name
     bundle: neighborhood
     entity_type: taxonomy_term
     ignore_case: true
     source: host_neighbourhood
-  field_host_listings_count: 
+  field_host_listings_count:
     plugin: callback
     callable: intval
     source: host_listings_count
-  field_host_listings_total_listin:  
+  field_host_listings_total_listin:
     plugin: callback
     callable: intval
     source: host_total_listings_count
   tmp_verification_array:
-    - plugin: str_replace
+    -
+      plugin: str_replace
       search: "'"
       replace: '"'
       source: host_verifications
-    - plugin: callback
+    -
+      plugin: callback
       callable: json_decode
-    - plugin: str_replace
-      search: [" ","/"]
-      replace: '_'
+    -
+      plugin: str_replace
+      search:
+        - ' '
+        - /
+      replace: _
   field_host_verifications: '@tmp_verification_array'
-  field_host_has_profile_pic:  
+  field_host_has_profile_pic:
     plugin: static_map
     map:
-      f: FALSE
-      t: TRUE
-    default_value: FALSE
+      f: false
+      t: true
+    default_value: false
     source: host_has_profile_pic
-  field_host_identity_verified:  
+  field_host_identity_verified:
     plugin: static_map
     map:
-      f: FALSE
-      t: TRUE
-    default_value: FALSE
+      f: false
+      t: true
+    default_value: false
     source: host_identity_verified
-  field_neighborhood_highlights:  
+  field_neighborhood_highlights:
     plugin: static_map
     map:
-      Neighborhood highlights: TRUE
-    default_value: FALSE
+      'Neighborhood highlights': true
+    default_value: false
     source: neighbourhood
-  field_neighborhood:  
+  field_neighborhood:
     plugin: entity_generate
     value_key: name
     bundle: neighborhood
     entity_type: taxonomy_term
     ignore_case: true
     source: neighbourhood_cleansed
-  field_neighborhood_group:     
-    - plugin: str_replace
-      search: [" ","/"]
-      replace: '_'
+  field_neighborhood_group:
+    -
+      plugin: str_replace
+      search:
+        - ' '
+        - /
+      replace: _
       source: neighbourhood_group_cleansed
-    - plugin: callback
-      callable: strtolower    
-  field_location_latitude: 
+    -
+      plugin: callback
+      callable: strtolower
+  field_location_latitude:
     plugin: callback
     callable: floatval
     source: latitude
-  field_location_longitude: 
+  field_location_longitude:
     plugin: callback
     callable: floatval
     source: longitude
-  field_property_type:   
+  field_property_type:
     plugin: entity_generate
     value_key: name
     bundle: property_type
     entity_type: taxonomy_term
     ignore_case: true
     source: property_type
-  field_room_type:      
-    - plugin: str_replace
-      search: [" ","/"]
-      replace: '_'
+  field_room_type:
+    -
+      plugin: str_replace
+      search:
+        - ' '
+        - /
+      replace: _
       source: room_type
-    - plugin: callback
+    -
+      plugin: callback
       callable: strtolower
-  field_number_of_guests:  
+  field_number_of_guests:
     plugin: callback
     callable: intval
     source: accommodates
-  field_bathrooms: 
+  field_bathrooms:
     plugin: callback
     callable: floatval
     source: bathrooms
   field_number_of_bathrooms_text: bathrooms_text
-  field_number_of_bedrooms:  
+  field_number_of_bedrooms:
     plugin: callback
     callable: intval
     source: bedrooms
-  field_number_of_beds:  
+  field_number_of_beds:
     plugin: callback
     callable: intval
     source: beds
   tmp_amenities_array:
-    - plugin: callback
-      callable: json_decode
-      source: amenities
+    plugin: callback
+    callable: json_decode
+    source: amenities
   field_amenities:
     plugin: entity_generate
     value_key: name
@@ -188,152 +206,153 @@ process:
     entity_type: taxonomy_term
     ignore_case: true
     source: '@tmp_amenities_array'
-  field_price:  
+  field_price:
     plugin: callback
     callable: intval
     source: price
-  field_minimum_nights:  
+  field_minimum_nights:
     plugin: callback
     callable: intval
     source: minimum_nights
-  field_maximum_nights:  
+  field_maximum_nights:
     plugin: callback
     callable: intval
     source: maximum_nights
-  field_minimum_minimum_nights:  
+  field_minimum_minimum_nights:
     plugin: callback
     callable: intval
     source: minimum_minimum_nights
-  field_maximum_minimum_nights:  
+  field_maximum_minimum_nights:
     plugin: callback
     callable: intval
     source: maximum_minimum_nights
-  field_minimum_maximum_nights:  
+  field_minimum_maximum_nights:
     plugin: callback
     callable: intval
     source: minimum_maximum_nights
-  field_maximum_maximum_nights:  
+  field_maximum_maximum_nights:
     plugin: callback
     callable: intval
     source: maximum_maximum_nights
-  field_minimum_nights_avg_ntm:  
+  field_minimum_nights_avg_ntm:
     plugin: callback
     callable: intval
     source: minimum_nights_avg_ntm
-  field_maximum_nights_avg_ntm:  
+  field_maximum_nights_avg_ntm:
     plugin: callback
     callable: intval
     source: maximum_nights_avg_ntm
-  field_has_availability:  
+  field_has_availability:
     plugin: static_map
     map:
-      f: FALSE
-      t: TRUE
-    default_value: FALSE
+      f: false
+      t: true
+    default_value: false
     source: has_availability
-  field_availability_30:  
+  field_availability_30:
     plugin: callback
     callable: intval
     source: availability_30
-  field_availability_60:  
+  field_availability_60:
     plugin: callback
     callable: intval
     source: availability_60
-  field_availability_90:  
+  field_availability_90:
     plugin: callback
     callable: intval
     source: availability_90
-  field_availability_365:  
+  field_availability_365:
     plugin: callback
     callable: intval
     source: availability_365
   field_calendar_last_scraped: calendar_last_scraped
-  field_number_of_reviews:  
+  field_number_of_reviews:
     plugin: callback
     callable: intval
     source: number_of_reviews
-  field_number_of_reviews_l12m:  
+  field_number_of_reviews_l12m:
     plugin: callback
     callable: intval
     source: number_of_reviews_ltm
-  field_number_of_reviews_l30d:  
+  field_number_of_reviews_l30d:
     plugin: callback
     callable: intval
     source: number_of_reviews_l30d
-  field_availability_to_end_of_yea:  
+  field_availability_to_end_of_yea:
     plugin: callback
     callable: intval
     source: availability_eoy
-  field_number_of_reviews_last_yea:  
+  field_number_of_reviews_last_yea:
     plugin: callback
     callable: intval
     source: number_of_reviews_ly
-  field_estimated_occupancy_l365d:  
+  field_estimated_occupancy_l365d:
     plugin: callback
     callable: intval
     source: estimated_occupancy_l365d
-  field_estimated_revenue_l365d:  
+  field_estimated_revenue_l365d:
     plugin: callback
     callable: intval
     source: estimated_revenue_l365d
   field_first_review: first_review
   field_last_review: last_review
-  field_review_scores_rating: 
+  field_review_scores_rating:
     plugin: callback
     callable: floatval
     source: review_scores_rating
-  field_review_scores_accuracy: 
+  field_review_scores_accuracy:
     plugin: callback
     callable: floatval
     source: review_scores_accuracy
-  field_review_scores_cleanliness: 
+  field_review_scores_cleanliness:
     plugin: callback
     callable: floatval
     source: review_scores_cleanliness
-  field_review_scores_checkin: 
+  field_review_scores_checkin:
     plugin: callback
     callable: floatval
     source: review_scores_checkin
-  field_review_scores_communicatio: 
+  field_review_scores_communicatio:
     plugin: callback
     callable: floatval
     source: review_scores_communication
-  field_review_scores_location: 
+  field_review_scores_location:
     plugin: callback
     callable: floatval
     source: review_scores_location
-  field_review_scores_value: 
+  field_review_scores_value:
     plugin: callback
     callable: floatval
     source: review_scores_value
   field_license: license
-  field_instant_bookable:  
+  field_instant_bookable:
     plugin: static_map
     map:
-      f: FALSE
-      t: TRUE
-    default_value: FALSE
+      f: false
+      t: true
+    default_value: false
     source: instant_bookable
-  field_calculated_host_count:  
+  field_calculated_host_count:
     plugin: callback
     callable: intval
     source: calculated_host_listings_count
-  field_calculated_host_count_enti:  
+  field_calculated_host_count_enti:
     plugin: callback
     callable: intval
     source: calculated_host_listings_count_entire_homes
-  field_calculated_host_count_pr:  
+  field_calculated_host_count_pr:
     plugin: callback
     callable: intval
     source: calculated_host_listings_count_private_rooms
-  field_calculated_host_count_sh:  
+  field_calculated_host_count_sh:
     plugin: callback
     callable: intval
     source: calculated_host_listings_count_shared_rooms
   field_reviews_per_month: reviews_per_month
 destination:
   plugin: 'entity:node'
+idMap: {  }
 migration_dependencies:
   required: {  }
   optional: {  }
-
+include: null
