@@ -1,4 +1,4 @@
-uuid: 4ca9384c-1fcd-49ed-9df8-62cae7225939
+uuid: d594d8c4-2b73-4458-935a-fb64bf331508
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
 id: node.field_listing_id
 field_name: field_listing_id
 entity_type: node
-type: integer
+type: decimal
 settings:
-  unsigned: false
-  size: normal
+  precision: 24
+  scale: 0
 module: core
 locked: false
 cardinality: 1

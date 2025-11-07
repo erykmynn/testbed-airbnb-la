@@ -441,13 +441,15 @@ content:
     weight: 173
     region: content
   field_listing_id:
-    type: number_integer
+    type: number_decimal
     label: above
     settings:
       thousand_separator: ''
+      decimal_separator: .
+      scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 101
+    weight: 181
     region: content
   field_listing_url:
     type: link

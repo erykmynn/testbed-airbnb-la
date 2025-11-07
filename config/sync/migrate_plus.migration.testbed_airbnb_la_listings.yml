@@ -11,11 +11,15 @@ migration_group: testbed_airbnb_la
 label: 'CSV file migration'
 source:
   plugin: csv
-  path: ../kaggle-data/listings.csv
+  path: ../kaggle-data/listings-corrected.csv
   header_offset: 0
   ids:
     - id
 process:
+  tmp_debug_id:
+    plugin: callback
+    callable: var_dump
+    source: id
   type:
     plugin: default_value
     default_value: listing
@@ -196,9 +200,35 @@ process:
     callable: intval
     source: beds
   tmp_amenities_array:
-    plugin: callback
-    callable: json_decode
-    source: amenities
+    -
+      plugin: str_replace
+      search: "'"
+      replace: \u0027
+      source: amenities
+    -
+      plugin: callback
+      callable: json_decode
+    -
+      plugin: multiple_values
+    -
+      plugin: str_replace
+      regex: true
+      search: /$/
+      replace: ' [eol-ax3f5]'
+    -
+      plugin: substr
+      start: 0
+      length: 250
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^(?!.*\[eol-ax3f5]$).*\K\s\S*$/'
+      replace: …
+    -
+      plugin: str_replace
+      regex: true
+      search: '/\s\[eol-ax3f5\]$/'
+      replace: ''
   field_amenities:
     plugin: entity_generate
     value_key: name
