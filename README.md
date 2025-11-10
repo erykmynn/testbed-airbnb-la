@@ -42,9 +42,9 @@ ddev drush site:install --existing-config
 - Visit <https://www.kaggle.com/datasets/wafaaalayoubi/los-angeles-airbnb-data-june-2025> and download the source data (registration may be required).
 - Unzip if necessary.
 - Ensure the `.csv` file is placed in `kaggle-data/` directory.
-- Run the following shell script to clean broken encoding in the importable CSVs (command shown at repo root):
+- **Important:**Run the following shell script to clean broken encoding in the importable CSVs (command shown at repo root):
 ```
-sed 's/\\""/\\u0022/g' kaggle-data\listings.csv > kaggle-data\listings-corrected.csv
+sed 's/\\""/\\u0022/g' kaggle-data/listings.csv > kaggle-data/listings-corrected.csv
 ```
 
 ## Data Import
