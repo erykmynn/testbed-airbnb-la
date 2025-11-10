@@ -16,6 +16,10 @@ source:
   ids:
     - id
 process:
+  tmp_debug_id:
+    plugin: callback
+    callable: var_dump
+    source: id
   type:
     plugin: default_value
     default_value: listing
