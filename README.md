@@ -2,7 +2,7 @@
 
 This is a preconfigured [Drupal](https://drupal.org) setup designed to import a real-world based [Kaggle](https://www.kaggle.com/) data set for experimental development, feature testing, etc.
 
-This testbed features ** ~45k AirBnb Listings in Los Angeles. **
+This testbed features **~45k AirBnb Listings in Los Angeles.**
 
 I set this up so as to have realistic data to pilot vector search, chatbot, geovisualization (contains lat/long), and data analysis and display technologies on top of Drupal.
 
@@ -21,13 +21,13 @@ If you have questions or ideas please use the message and issue options here on 
 ## Install preconfigured Drupal
 (From the repo's root directory)
 Install all composer dependecies, contrib modules, etc:
-    composer install
+        composer install
 
 Start DDEV
-    ddev start
+        ddev start
 
 Install Drupal using the existing config files:
-    ddev drush site:install --existing-config
+        ddev drush site:install --existing-config
 
 *Drush will provide an admin username and password.*
 
@@ -38,7 +38,7 @@ Install Drupal using the existing config files:
 - Unzip if necessary.
 - Ensure the `.csv` file is placed in `kaggle-data/` directory.
 - Run the following shell script to clean broken encoding in the importable CSVs (command shown at repo root):
-    sed 's/\\""/\\u0022/g' kaggle-data\listings.csv > kaggle-data\listings-corrected.csv
+        sed 's/\\""/\\u0022/g' kaggle-data\listings.csv > kaggle-data\listings-corrected.csv
 
 
 ## Data Import
@@ -48,12 +48,13 @@ There are two ways to go about this.
 - Just go for it and hope your setup makes it all the way through
 
 ### Partial-Restart Script
- I was running into `MYSQL has gone away` errors if I tried to import it in one go, so instead did 5000 records at a time then restarted ddev. You can execute this as a script (command shown from repo root):
-    kaggle-data/safe-import-restart.sh
+ I was running into `MYSQL has gone away` errors if I tried to import it in one go, so instead did 5000 records at a time then restarted ddev. I oroginally did this by executing `ddev restart; drush migrate:import testbed_airbnb_la_listings --limit=5000
+` repleadeted, but **you can execute this as a script** (command shown from repo root):
+        kaggle-data/safe-import-restart.sh
 
 ### Full import
 If you feel comfortable running the whole import in one pass, you can try:
-    ddev drush migrate:import testbed_airbnb_la_listings
+        ddev drush migrate:import testbed_airbnb_la_listings
 
 # Next Steps
 
