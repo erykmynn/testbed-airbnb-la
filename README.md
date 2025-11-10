@@ -2,7 +2,7 @@
 
 This is a preconfigured [Drupal](https://drupal.org) setup designed to import a real-world based [Kaggle](https://www.kaggle.com/) data set for experimental development, feature testing, etc.
 
-This testbed features **~45k AirBnb Listings in Los Angeles.**
+This testbed features **~45k AirBnb Listings in Los Angeles** along with some precalculated analysis fields. *Note: This data is property of the original rightsholder and should only be used for testing and analysis unless otherwise released. See Kaggle source link for more info.*
 
 I set this up so as to have realistic data to pilot vector search, chatbot, geovisualization (contains lat/long), and data analysis and display technologies on top of Drupal.
 
