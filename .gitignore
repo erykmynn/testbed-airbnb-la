@@ -53,6 +53,5 @@ web/themes/contrib
 # simpletest
 
 
-/kaggle-data/*
-!/kaggle-data/*.md
-!/kaggle-data/*.yml
+/kaggle-data/*.zip
+/kaggle-data/*.csv
