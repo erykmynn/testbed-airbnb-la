@@ -26,7 +26,9 @@ composer install
 ```
 
 Start DDEV
-```    ddev start
+```
+ddev start
+```
 
 Install Drupal using the existing config files:
 ```
